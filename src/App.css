@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.Maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-color: rgb(171, 227, 227);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MainHeading {
+    font-family: 'Great Vibes', cursive;
+    color: rgb(11, 70, 70);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.FormContainer input {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    color: rgb(11, 70, 70);
+    border: 2px solid rgb(11, 70, 70);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.FormContainer input:focus {
+    outline: none;
+    border: 2px solid rgb(11, 70, 70);
+    box-shadow: 0 0 5px rgb(11, 70, 70);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FormContainer input:hover {
+    transform: scale(1.06);
+}
+
+#submitbuttonid {
+    transition: all 0.3s ease-in-out;
+    color: rgb(11, 70, 70);
+    background-color: white;
+}
+
+#submitbuttonid:hover {
+    background-color: rgb(11, 70, 70);
+    color: white;
+}
+
+.FormContainer select {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    color: rgb(11, 70, 70);
+    border: 2px solid rgb(11, 70, 70);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.FormContainer select:focus {
+    outline: none;
+    border: 2px solid rgb(11, 70, 70);
+    box-shadow: 0 0 5px rgb(11, 70, 70);
+}
+
+.FormContainer select:hover {
+    transform: scale(1.06);
+}
+
+.DateOfBirthContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DateOfBirthContainer p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
